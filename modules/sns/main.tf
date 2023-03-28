@@ -8,14 +8,14 @@ variable "subscriptions" {
   type = set(string)
 }
 
-resource "aws_sns_topic" "topic" {
+resource "aws_sns_topic" "topic_name" {
   name = var.topic_name
 }
 
-resource "aws_sns_topic_subscription" "subscription" {
+resource "aws_sns_topic_subscription" "subscription_name" {
   for_each = var.subscriptions
 
-  topic_arn = aws_sns_topic.topic.arn
+  topic_arn = aws_sns_topic.topic_name.arn
   protocol = "email"
   endpoint = each.value
 }
