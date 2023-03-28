@@ -19,3 +19,7 @@ resource "aws_sns_topic_subscription" "subscription_name" {
   protocol = "email"
   endpoint = each.value
 }
+
+output topi_arn {
+  value = aws_sns_topic.topic_name.arn
+}
