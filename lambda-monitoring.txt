@@ -1,0 +1,19 @@
+metrics for monitor lambda functions
+
+Lambda functions can be monitored using various metrics provided by Amazon CloudWatch, which is a monitoring service provided by AWS. Here are some metrics that can be used to monitor Lambda functions:
+
+Invocations: This metric tracks the number of times a Lambda function is invoked.
+
+Duration: This metric tracks the amount of time it takes for a Lambda function to complete.
+
+Error count: This metric tracks the number of times a Lambda function throws an error.
+
+Throttles: This metric tracks the number of times a Lambda function is throttled due to exceeding concurrency limits.
+
+IteratorAge: This metric tracks the age of the last record processed by a Kinesis or DynamoDB stream event source.
+
+Concurrent executions: This metric tracks the number of concurrent executions of a Lambda function.
+
+Memory usage: This metric tracks the amount of memory used by a Lambda function.
+
+By monitoring these metrics, you can gain insights into the performance, scalability, and availability of your Lambda functions, and take actions to optimize and improve their performance.
