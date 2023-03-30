@@ -11,6 +11,7 @@ variable "subscriptions" {
 
 resource "aws_sns_topic" "topic_name" {
   name = var.topic_name
+  enable_encryption = true
 }
 
 resource "aws_sns_topic_subscription" "subscription_name" {
